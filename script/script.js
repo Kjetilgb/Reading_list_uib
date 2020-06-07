@@ -131,7 +131,6 @@ function filter(){
 
         // Filtering by student points
         if (option === 'points' && current !== 'alle') {
-            console.log('here')
             result = result.filter(val => 
                 val.studiepoeng === current
             )
