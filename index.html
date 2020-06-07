@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <title>Litteraturliste UiB 2019H</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="script/keys.js"></script>
+    <script src="script/script.js"></script>
+</head>
+<body>
+<div id="wrapper">
+    <div id="header">
+        <h1>Litteratur-/pensumliste ved UiB Høst 2020</h1>
+        <p style="color: #cf3b3a">Viser bare emner med tilgjengelig litteraturliste</p>
+        <div id="searchContainer">
+            <div class="flexRow">
+                <span>Søk etter emne her: </span>
+                <input placeholder="Eks. INFO233 eller Avansert Programmering" type="text" id="courseSearch">
+            </div>
+            <div class="flexRow">
+                <span>Fakultet:</span>
+                <select id="facultyList" name="Faculties">
+                    <option value="alle">Alle</option>
+                </select>
+                <span>Antall studiepoeng:</span>
+                <select name="StudentPoints" id="studentPointList">
+                    <option value="alle">Alle</option>
+                </select>
+                <div id="sortContainer" class="floatRight">
+                    <span>Sorter etter: </span>
+                    <select id="sortList">
+                        <option value="none none">--</option>
+                        <option value="emnekode asc">Emnekode A - Å</option>
+                        <option value="emnekode desc">Emnekode Å - A</option>
+                        <option value="studiepoeng asc">Studiepoeng lav-høy</option>
+                        <option value="studiepoeng desc">Studiepoeng høy-lav</option>
+                        <option value="emnenavn_bokmal asc">Emnenavn A - Å</option>
+                        <option value="emnenavn_bokmal desc">Emnenavn Å - A</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="tableContainer"></div>
+    <div id="footer">
+        <button onclick="toTop()" id="topButton" title="Go to the top">Top</button>
+    </div>
+</div>
+</body>
+</html>
