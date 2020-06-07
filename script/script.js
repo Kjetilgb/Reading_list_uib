@@ -128,7 +128,16 @@ function filter(){
     // Filtering options
     for (const option in query['filter']) {
         let current = query['filter'][option]
-        if (current !== 'alle') { // Check if any filtering is chosen
+
+        // Filtering by student points
+        if (option === 'points' && current !== 'alle') {
+            console.log('here')
+            result = result.filter(val => 
+                val.studiepoeng === current
+            )
+        }
+        else if (current !== 'alle') { // Check if any filtering is chosen
+            // Filtering for name and faculty
             result = result.filter(val => {
                 for (const values in val) {
                     // For filtering by course name/code as one types it in
