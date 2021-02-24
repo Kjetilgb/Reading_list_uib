@@ -5,8 +5,6 @@ Some courses are more clear on providing a reading list, while som are not.
 
 I therefore started this little project so I could find the reading list for my courses easier.
 
-You can check out the working project on [my site](https://folk.uib.no/zib007/)
-
 This project requires you to have an API key. If you want to try the project out yourself you can [get a key by generating one from this link.](https://dataapi.app.uib.no/?lang=en)
 
 
